@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="533.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="565.0" layoutX="-4.0" layoutY="-2.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/CCE48EF2-832E-412A-BF14-CE48027ECBFB.JPG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Username" layoutX="141.0" layoutY="200.0" prefHeight="30.0" prefWidth="250.0" />
+      <PasswordField fx:id="Password" layoutX="141.0" layoutY="240.0" prefHeight="30.0" prefWidth="250.0" />
+      <Button fx:id="CreateAccountButton" layoutX="139.0" layoutY="290.0" mnemonicParsing="false" onAction="#CreatingAccount" prefHeight="25.0" prefWidth="120.0" text="Create Account" />
+      <Button fx:id="LoginButton" layoutX="271.0" layoutY="290.0" mnemonicParsing="false" onAction="#LogInPress" prefHeight="25.0" prefWidth="120.0" text="Log In" />
+      <Text layoutX="110.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MVRTE ORGANIZER TOOL" textAlignment="CENTER" wrappingWidth="323.4849853515625">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="435.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddProductController">
+   <children>
+      <Text layoutX="233.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Products" wrappingWidth="225.34194946289062">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="productNameField" layoutX="17.0" layoutY="108.0" prefHeight="30.0" prefWidth="180.0" promptText="Name of Product" />
+      <TextField fx:id="investedCapitalField" layoutX="17.0" layoutY="149.0" prefHeight="30.0" prefWidth="180.0" promptText="Capital Invested" />
+      <TextField fx:id="basePriceField" layoutX="17.0" layoutY="189.0" prefHeight="30.0" prefWidth="180.0" promptText="Base Price" />
+      <TextField fx:id="totalStockField" layoutX="17.0" layoutY="229.0" prefHeight="30.0" prefWidth="180.0" promptText="Total Stock" />
+      <Button fx:id="addProductButton" layoutX="101.0" layoutY="279.0" mnemonicParsing="false" onAction="#AddingProduct" prefHeight="25.0" prefWidth="95.0" text="Add Product" />
+      <Button fx:id="editButton" layoutX="385.0" layoutY="64.0" mnemonicParsing="false" onAction="#EditingProduct" prefHeight="27.0" prefWidth="95.0" text="Edit" />
+      <Button fx:id="updateButton" layoutX="485.0" layoutY="64.0" mnemonicParsing="false" onAction="#UpdatingProduct" prefHeight="27.0" prefWidth="95.0" text="Update" />
+      <Button fx:id="deleteButton" layoutX="585.0" layoutY="64.0" mnemonicParsing="false" onAction="#DeletingProduct" prefHeight="27.0" prefWidth="95.0" text="Delete" />
+      <Button fx:id="saveButton" layoutX="285.0" layoutY="64.0" mnemonicParsing="false" onAction="#SavingProduct" prefHeight="27.0" prefWidth="95.0" text="Save" />
+      <TableView fx:id="ProductsTable" layoutX="226.0" layoutY="108.0" prefHeight="295.0" prefWidth="458.0">
+        <columns>
+          <TableColumn fx:id="NameColumn" prefWidth="115.0" text="Name of Product" />
+            <TableColumn fx:id="CapitalColumn" prefWidth="95.0" text="Capital" />
+            <TableColumn fx:id="PriceColumn" minWidth="4.6666259765625" prefWidth="105.0" resizable="false" text="B. Price" />
+            <TableColumn fx:id="StockColumn" prefWidth="142.0" resizable="false" text="T. Stock" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#BackToLogIn" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateAccountController">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="380.0" layoutX="-5.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/5A9A93D2-6E82-4A44-ACB6-13E13CFFA417.JPG" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackButton" layoutX="29.0" layoutY="32.0" mnemonicParsing="false" onAction="#BackToLogIn" text="Back to Main Menu" />
+      <TextField fx:id="UsernameField" layoutX="36.0" layoutY="184.0" prefHeight="39.0" prefWidth="247.0" promptText="Username" />
+      <PasswordField fx:id="PasswordField" layoutX="36.0" layoutY="259.0" prefHeight="39.0" prefWidth="247.0" promptText="Password" />
+      <Button fx:id="SaveButton" layoutX="237.0" layoutY="331.0" mnemonicParsing="false" onAction="#Saving" text="Save" />
+      <Button fx:id="UpdateButton" layoutX="167.0" layoutY="331.0" mnemonicParsing="false" onAction="#Updating" text="Update" />
+      <Button fx:id="SaveUpdateButton" layoutX="596.0" layoutY="455.0" mnemonicParsing="false" onAction="#SavingAndUpdating" prefHeight="27.0" prefWidth="136.0" text="Save and Update" />
+      <Button fx:id="DeleteButton" layoutX="527.0" layoutY="455.0" mnemonicParsing="false" onAction="#Deleting" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+      <Button fx:id="EditButton" layoutX="457.0" layoutY="455.0" mnemonicParsing="false" onAction="#Editing" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+      <TableView fx:id="UsersTable" layoutX="369.0" layoutY="80.0" prefHeight="363.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="UsernameColumn" prefWidth="183.71670532226562" text="Username" />
+          <TableColumn fx:id="PasswordColumn" prefWidth="192.283203125" text="Password" />
+        </columns>
+      </TableView>
+      <Label contentDisplay="CENTER" layoutX="495.0" layoutY="7.0" prefHeight="17.0" prefWidth="125.0" text="Users">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
