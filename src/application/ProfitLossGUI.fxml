@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProfitLossController">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="625.0" layoutX="100.0" layoutY="96.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/MVRTE%20logo%20copy.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="300.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit&amp;Loss" wrappingWidth="195.02001953125">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="43.0" layoutY="34.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <TableView fx:id="ProfitLossTable" layoutX="140.0" layoutY="125.0" prefHeight="380.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="productColumn" prefWidth="111.36727905273438" text="Product" />
+          <TableColumn fx:id="earningsColumn" prefWidth="144.0" text="Earnings" />
+            <TableColumn fx:id="costsColumn" prefWidth="150.0" text="Costs" />
+            <TableColumn fx:id="profitColumn" prefWidth="139.94223022460938" text="Profit/Loss" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

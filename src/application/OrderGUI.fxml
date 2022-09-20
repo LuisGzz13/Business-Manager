@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrdersController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="341.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/5A9A93D2-6E82-4A44-ACB6-13E13CFFA417.JPG" />
+         </image>
+      </ImageView>
+      <Text layoutX="415.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Orders" wrappingWidth="303.07342529296875">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#GoBack" text="Back" />
+      <ChoiceBox fx:id="productChooser" layoutX="6.0" layoutY="144.0" prefHeight="35.0" prefWidth="160.0" />
+      <Button fx:id="addProductButton" layoutX="170.0" layoutY="146.0" mnemonicParsing="false" onAction="#GoToAddProduct" prefHeight="30.0" prefWidth="100.0" text="Add Product" />
+      <TextField fx:id="clientNameField" layoutX="6.0" layoutY="198.0" prefHeight="35.0" prefWidth="160.0" promptText="Client Name" />
+      <TextField fx:id="dateOfSaleField" layoutX="6.0" layoutY="249.0" prefHeight="35.0" prefWidth="160.0" promptText="Date of Sale" />
+      <TextField fx:id="priceField" disable="true" layoutX="6.0" layoutY="303.0" prefHeight="35.0" prefWidth="160.0" promptText="Price" />
+      <CheckBox fx:id="specialPrice" layoutX="171.0" layoutY="303.0" mnemonicParsing="false" onAction="#ActivateSpecialPrice" prefHeight="35.0" prefWidth="120.0" text="Special Price" />
+      <Button fx:id="addOrderButton" layoutX="64.0" layoutY="403.0" mnemonicParsing="false" onAction="#AddingOrder" prefHeight="30.0" prefWidth="100.0" text="Add Order" />
+      <TableView fx:id="OrdersTable" layoutX="279.0" layoutY="137.0" prefHeight="362.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="productColumn" prefWidth="103.7880859375" text="Product" />
+          <TableColumn fx:id="customerColumn" prefWidth="104.36672973632812" text="Customer" />
+            <TableColumn fx:id="dateColumn" prefWidth="110.5242919921875" text="Date" />
+            <TableColumn fx:id="priceColumn" prefWidth="101.3638916015625" text="Price" />
+            <TableColumn fx:id="quantityColumn" prefWidth="101.3638916015625" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="editButton" layoutX="453.0" layoutY="92.0" mnemonicParsing="false" onAction="#EditingProduct" prefHeight="30.0" prefWidth="100.0" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="671.0" layoutY="91.0" mnemonicParsing="false" onAction="#DeletingProduct" prefHeight="30.0" prefWidth="100.0" text="Delete" />
+      <Button fx:id="saveButton" layoutX="668.0" layoutY="524.0" mnemonicParsing="false" onAction="#SavingOrders" prefHeight="30.0" prefWidth="100.0" text="Save" />
+      <Button fx:id="updateButton" layoutX="563.0" layoutY="92.0" mnemonicParsing="false" onAction="#Updating" prefHeight="30.0" prefWidth="100.0" text="Update" />
+      <TextField fx:id="quantityField" layoutX="6.0" layoutY="353.0" prefHeight="35.0" prefWidth="160.0" promptText="Quantity" />
+   </children>
+</AnchorPane>

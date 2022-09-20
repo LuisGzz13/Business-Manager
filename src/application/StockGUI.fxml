@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StockController">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="625.0" layoutX="110.0" layoutY="106.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Images/MVRTE%20logo%20copy.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="297.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Chart" wrappingWidth="185.2069091796875">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <TableView fx:id="StockTable" layoutX="150.0" layoutY="135.0" prefHeight="380.0" prefWidth="542.0">
+         <columns>
+            <TableColumn fx:id="productColumn" prefWidth="165.04197692871094" text="Product" />
+            <TableColumn fx:id="ogStockColumn" prefWidth="173.95797729492188" text="Original Stock" />
+            <TableColumn fx:id="stockRemainingColumn" prefWidth="202.87042236328125" text="Stock Remaining" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConduitController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/2E18B17D-1394-4F40-BB0A-037B6D886857.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="400.0" layoutX="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/D43CF5FE-908E-4D2F-A53F-ADB20AED11B1.JPG" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="33.0" layoutY="22.0" mnemonicParsing="false" onAction="#backToLogIn" prefHeight="27.0" prefWidth="71.0" text="Back" />
+      <Button fx:id="orderButton" layoutX="180.0" layoutY="153.0" mnemonicParsing="false" onAction="#goToOrders" prefHeight="117.0" prefWidth="185.0" text="Orders" />
+      <Button fx:id="profitLossButton" layoutX="427.0" layoutY="152.0" mnemonicParsing="false" onAction="#goToProfitLoss" prefHeight="117.0" prefWidth="185.0" text="Profit&amp;Loss" />
+      <Button fx:id="emailButton" layoutX="182.0" layoutY="317.0" mnemonicParsing="false" onAction="#goToEmail" prefHeight="117.0" prefWidth="185.0" text="Email" />
+      <Button fx:id="stockButton" layoutX="431.0" layoutY="317.0" mnemonicParsing="false" onAction="#goToStock" prefHeight="117.0" prefWidth="185.0" text="Stock" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EmailController">
+   <children>
+      <Text layoutX="261.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MVRTE Email Sender" wrappingWidth="343.4068298339844">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="33.0" layoutY="22.0" mnemonicParsing="false" onAction="#Backing" prefHeight="27.0" prefWidth="60.0" text="Back" />
+      <TextField fx:id="ToEmail" layoutX="97.0" layoutY="93.0" prefHeight="27.0" prefWidth="231.0" promptText="To:" />
+      <TextField fx:id="Subject" layoutX="97.0" layoutY="126.0" prefHeight="27.0" prefWidth="632.0" promptText="Subject" />
+      <TextArea fx:id="MessageTextArea" layoutX="97.0" layoutY="163.0" prefHeight="275.0" prefWidth="632.0" />
+      <Button fx:id="sendButton" layoutX="583.0" layoutY="489.0" mnemonicParsing="false" onAction="#Sending" prefHeight="36.0" prefWidth="130.0" text="Send Email" />
+   </children>
+</AnchorPane>
